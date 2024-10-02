@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Send, Palette, Code, Smartphone, Apple, Database, BarChart, CheckCircle, Users, Zap, PlusCircle, MinusCircle, Phone, Mail, Globe, Sun, Moon } from 'lucide-react'
+import { Menu, X, Send, Palette, Code, Smartphone, Apple, Database, BarChart, CheckCircle, Users, Zap, PlusCircle, MinusCircle, Phone, Mail, Globe, Sun, Moon } from 'lucide-react'
 
 const services = [
   { name: 'Web Design', icon: Palette },
