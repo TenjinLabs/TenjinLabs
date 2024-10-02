@@ -599,7 +599,7 @@ export default function LandingPage() {
                 </button>
               </div>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4`}>
-                We've received your message and appreciate your interest in our services. Our team will review your inquiry and get back to you shortly.
+                We&apos;ve received your message and appreciate your interest in our services. Our team will review your inquiry and get back to you shortly.
               </p>
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                 In the meantime, feel free to explore our website for more information about our services and technologies.
