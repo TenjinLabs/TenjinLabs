@@ -2,21 +2,23 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Send, Palette, Code, Smartphone, Apple, Database, BarChart, CheckCircle, Users, Zap, PlusCircle, MinusCircle, Phone, Mail, Globe, Sun, Moon } from 'lucide-react'
+import { Menu, X, Send, Palette, Code, Smartphone, MonitorSmartphone, Database, BarChart, CheckCircle, Users, Zap, PlusCircle, MinusCircle, Phone, Mail, Globe, Sun, Moon } from 'lucide-react'
 
 const services = [
-  { name: 'Web Design', icon: Palette },
-  { name: 'Web Development', icon: Code },
-  { name: 'Android Development', icon: Smartphone },
-  { name: 'iOS Development', icon: Apple },
   { name: 'ETL', icon: Database },
   { name: 'Business Intelligence', icon: BarChart },
+  { name: 'Design', icon: Palette },
+  { name: 'Web Development', icon: Code },
+  { name: 'Android Development', icon: Smartphone },
+  { name: 'iOS Development', icon: MonitorSmartphone },
 ]
 
 const technologies = [
-  'React', 'Next.js', 'Vue.js', 'Angular', 'Node.js',
+   'MongoDB', 'AWS', 'Docker', 'Azure Data Factory', 'Kafka',
+  'React', 'Next.js', 'Vue.js', 'Flutter', 'Node.js',
   'Python', 'Java', 'Swift', 'Kotlin', 'PostgreSQL',
-  'MongoDB', 'AWS', 'Docker', 'Kubernetes', 'TensorFlow'
+  'Azure Data Factory', 'AWS Glue', 'Oracle Data Integrator', 'Telned Open Studio',
+  'Tableau','Oracle BI', 'Microsoft Power BI','SAP'
 ]
 
 const whyChooseUs = [
@@ -117,7 +119,7 @@ export default function LandingPage() {
               transition={{ duration: 0.5 }}
               className={`text-2xl font-bold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}
             >
-              TechNova
+              TenjinLabs
             </motion.h1>
             <div className="hidden md:flex space-x-8">
               {['home', 'services', 'technologies', 'why-choose-us', 'contact', 'faq'].map((item) => (
@@ -187,7 +189,7 @@ export default function LandingPage() {
             <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style={{ stopColor: isDarkMode ? 'rgb(30, 64, 175)' : 'rgb(191, 219, 254)', stopOpacity: 0.2 }} />
+                  <stop offset="0%" style={{ stopColor: isDarkMode ? 'rgb(30, 64, 200)' : 'rgb(200, 219, 254)', stopOpacity: 0.2 }} />
                   <stop offset="100%" style={{ stopColor: isDarkMode ? 'rgb(30, 58, 138)' : 'rgb(219, 234, 254)', stopOpacity: 0 }} />
                 </linearGradient>
               </defs>
@@ -404,21 +406,21 @@ export default function LandingPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>First Name</label>
-                      <input type="text" id="firstName" name="firstName" className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
+                      <input type="text" id="firstName" name="firstName" placeholder='John' className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
                     </div>
                     <div>
                       <label htmlFor="lastName" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Last Name</label>
-                      <input type="text" id="lastName" name="lastName" className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
+                      <input type="text" id="lastName" name="lastName" placeholder='Doe' className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="email" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Email</label>
-                      <input type="email" id="email" name="email" className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
+                      <input type="email" id="email" name="email" placeholder='john@tenjinlabs.in' className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
                     </div>
                     <div>
                       <label htmlFor="phone" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Phone Number</label>
-                      <input type="tel" id="phone" name="phone" className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
+                      <input type="tel" id="phone" name="phone" placeholder='+91901010078' className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required />
                     </div>
                   </div>
                   <div>
@@ -431,7 +433,7 @@ export default function LandingPage() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={() => toggleService(service.name)}
-                          className={`flex items-center justify-center space-x-2 p-3 rounded-md transition duration-300 ${
+                          className={`flex items-center justify-none space-x-2 p-3 rounded-md transition duration-300 ${
                             selectedServices.includes(service.name)
                               ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
                               : isDarkMode ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -444,7 +446,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="message" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Message</label>
+                    <label htmlFor="message" className={`block text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mb-1`}>Requirements</label>
                     <textarea id="message" name="message" rows={4} className={`w-full px-4 py-2 rounded-md ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-blue-500`} required></textarea>
                   </div>
                   <motion.button
@@ -454,7 +456,7 @@ export default function LandingPage() {
                     type="submit"
                   >
                     <Send className="mr-2" />
-                    Send Message
+                    Send
                   </motion.button>
                 </form>
               </motion.div>
@@ -465,19 +467,44 @@ export default function LandingPage() {
                 viewport={{ once: true }}
                 className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-8 rounded-lg shadow-xl space-y-6`}
               >
+                            <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <defs>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style={{ stopColor: isDarkMode ? 'rgb(30, 64, 175)' : 'rgb(191, 219, 254)', stopOpacity: 0.1 }} />
+                  <stop offset="100%" style={{ stopColor: isDarkMode ? 'rgb(30, 58, 138)' : 'rgb(219, 234, 254)', stopOpacity: 0 }} />
+                </linearGradient>
+              </defs>
+              <motion.path
+                fill="url(#grad3)"
+                fillOpacity="1"
+                initial={{ d: "M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" }}
+                animate={{
+                  d: [
+                    "M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z",
+                    "M0,64L48,85.3C96,107,192,149,288,160C384,171,480,149,576,165.3C672,181,768,235,864,234.7C960,235,1056,181,1152,176C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z",
+                  ],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  duration: 20,
+                  ease: "linear",
+                }}
+              />
+            </svg>
                 <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
                     <Phone className={isDarkMode ? 'text-green-400' : 'text-green-600'} />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+1 (555) 123-4567</span>
+                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 (79) 123-4567</span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail className={isDarkMode ? 'text-green-400' : 'text-green-600'} />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@technova.com</span>
+                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>admin@tenjinlabs.in</span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Globe className={isDarkMode ? 'text-green-400' : 'text-green-600'} />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>www.technova.com</span>
+                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>www.tenjinlabs.in</span>
                   </div>
                 </div>
                 <div className="mt-8">
@@ -572,7 +599,7 @@ export default function LandingPage() {
 
       <footer className={`${isDarkMode ? 'bg-gray-900' : 'bg-gray-100'} py-8 ${isDarkMode ? 'border-t border-gray-800' : 'border-t border-gray-200'}`}>
         <div className="container mx-auto px-6 text-center">
-          <p className={isDarkMode ? 'text-gray-500' : 'text-gray-600'}>&copy; 2023 TechNova. All rights reserved.</p>
+          <p className={isDarkMode ? 'text-gray-500' : 'text-gray-600'}>&copy; 2024 TenjinLabs. All rights reserved.</p>
         </div>
       </footer>
 
@@ -599,7 +626,7 @@ export default function LandingPage() {
                 </button>
               </div>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4`}>
-                We've received your message and appreciate your interest in our services. Our team will review your inquiry and get back to you shortly.
+                We&apos;ve received your message and appreciate your interest in our services. Our team will review your inquiry and get back to you shortly.
               </p>
               <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
                 In the meantime, feel free to explore our website for more information about our services and technologies.
