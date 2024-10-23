@@ -120,7 +120,7 @@ export default function LandingPage() {
               transition={{ duration: 0.5 }}
               className={`text-2xl font-bold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}
             >
-              Tenjin<span className='font-light text-green-400'>Labs</span>
+              <span className='font-bold text-green-400'>天神</span>Tenjin<span className='font-light text-green-400'>Labs</span>
             </motion.h1>
             <div className="hidden md:flex space-x-8">
               {['home', 'services', 'technologies', 'why-choose-us', 'contact', 'faq'].map((item) => (
@@ -643,7 +643,7 @@ export default function LandingPage() {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence>  
     </div>
   )
 }
