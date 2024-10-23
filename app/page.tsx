@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Send, Palette, Code, Smartphone, MonitorSmartphone, Database, BarChart, CheckCircle, Users, Zap, PlusCircle, MinusCircle, Phone, Mail, Globe, Sun, Moon } from 'lucide-react'
 
 const services = [
-<<<<<<< HEAD
   { rname:'ETL',  name: 'ETL', icon: Database, dis:"Streamline your data processes with our ETL solutions. We help you gather, cleanse, and organize data into actionable insights, boosting efficiency and decision-making" },
   { rname:'BI', name: 'Business Intelligence', icon: BarChart, dis:"Unlock the power of your data with our Business Intelligence tools. Gain clear, real-time insights to drive smarter decisions and fuel your growth."},
   { rname:'Design', name: 'Design', icon: Palette , dis:"Craft modern, visually stunning websites & applications that stand out. Our designs are intuitive, engaging, and focused on providing the best user experience."},
@@ -21,22 +20,6 @@ const technologies = [
   'React', 'Next.js', 'Vue.js', 'Flutter', 'Node.js',
   'Python', 'Java', 'Swift', 'Kotlin', 'PostgreSQL',
 
-=======
-  { name: 'ETL', icon: Database },
-  { name: 'Business Intelligence', icon: BarChart },
-  { name: 'Design', icon: Palette },
-  { name: 'Web Development', icon: Code },
-  { name: 'Android Development', icon: Smartphone },
-  { name: 'iOS Development', icon: MonitorSmartphone },
-]
-
-const technologies = [
-   'MongoDB', 'AWS', 'Docker', 'Azure Data Factory', 'Kafka',
-  'React', 'Next.js', 'Vue.js', 'Flutter', 'Node.js',
-  'Python', 'Java', 'Swift', 'Kotlin', 'PostgreSQL',
-  'Azure Data Factory', 'AWS Glue', 'Oracle Data Integrator', 'Telned Open Studio',
-  'Tableau','Oracle BI', 'Microsoft Power BI','SAP'
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
 ]
 
 const whyChooseUs = [
@@ -137,11 +120,7 @@ export default function LandingPage() {
               transition={{ duration: 0.5 }}
               className={`text-2xl font-bold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}
             >
-<<<<<<< HEAD
               Tenjin<span className='font-light text-green-400'>Labs</span>
-=======
-              TenjinLabs
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
             </motion.h1>
             <div className="hidden md:flex space-x-8">
               {['home', 'services', 'technologies', 'why-choose-us', 'contact', 'faq'].map((item) => (
@@ -302,11 +281,7 @@ export default function LandingPage() {
                     <h3 className="text-xl font-semibold">{service.name}</h3>
                   </div>
                   <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
-<<<<<<< HEAD
                     {service.dis}
-=======
-                    Leveraging cutting-edge technologies to deliver robust and scalable solutions tailored to your business needs.
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
                   </p>
                 </motion.div>
               ))}
@@ -391,11 +366,7 @@ export default function LandingPage() {
                   viewport={{ once: true }}
                   className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-100'} p-6 rounded-lg shadow-lg`}
                 >
-<<<<<<< HEAD
                   <item.icon className={`w-12 h-12 ${isDarkMode ? 'text-green-500' : 'text-green-600'} mb-3`} />
-=======
-                  <item.icon className={`w-12 h-12 ${isDarkMode ? 'text-green-400' : 'text-green-600'} mb-4`} />
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
                   <h3 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>{item.title}</h3>
                   <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{item.description}</p>
                 </motion.div>
@@ -458,7 +429,6 @@ export default function LandingPage() {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                       {services.map((service) => (
                         <motion.button
-<<<<<<< HEAD
                           key={service.rname}
                           type="button"
                           whileHover={{ scale: 1.05 }}
@@ -466,25 +436,12 @@ export default function LandingPage() {
                           onClick={() => toggleService(service.rname)}
                           className={`flex items-center justify-none space-x-2 p-3 rounded-md transition duration-300 ${
                             selectedServices.includes(service.rname)
-=======
-                          key={service.name}
-                          type="button"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          onClick={() => toggleService(service.name)}
-                          className={`flex items-center justify-none space-x-2 p-3 rounded-md transition duration-300 ${
-                            selectedServices.includes(service.name)
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
                               ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
                               : isDarkMode ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                           }`}
                         >
                           <service.icon className="w-5 h-5" />
-<<<<<<< HEAD
                           <span className="text-sm font-medium">{service.rname}</span>
-=======
-                          <span className="text-sm font-medium">{service.name}</span>
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
                         </motion.button>
                       ))}
                     </div>
@@ -540,11 +497,7 @@ export default function LandingPage() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
                     <Phone className={isDarkMode ? 'text-green-400' : 'text-green-600'} />
-<<<<<<< HEAD
                     <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 (79) 8166-7734</span>
-=======
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 (79) 123-4567</span>
->>>>>>> 00e092e9d69d39bb7b2f29bde3fb0c7c84c2e48f
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail className={isDarkMode ? 'text-green-400' : 'text-green-600'} />
