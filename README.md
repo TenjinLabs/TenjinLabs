@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to TenjinLabs
 
-## Getting Started
+![Screenshot (62)](https://github.com/user-attachments/assets/b6281787-e751-4c96-905b-5923cd5bd8a6)
 
-First, run the development server:
+TenjinLabs is a cutting-edge technology company that specializes in providing top-notch services in various domains. Our expertise lies in:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Services Offered
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Android Development
+We design and develop innovative Android applications that cater to diverse business needs. Our team of experts ensures seamless integration, robust security, and exceptional user experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### iOS Development
+Our skilled developers craft stunning iOS applications that are both functional and visually appealing. We focus on delivering high-performance, scalable, and secure solutions that meet your business objectives.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Web Development
+From conceptualization to deployment, we offer comprehensive web development services that cover the entire spectrum of your online presence. Our team creates responsive, user-friendly, and engaging websites that drive business growth.
 
-## Learn More
+### ETL (Extract, Transform, Load)
+Our ETL services enable you to extract valuable insights from your data. We design and implement efficient data pipelines that transform and load your data into actionable information.
 
-To learn more about Next.js, take a look at the following resources:
+### BI (Business Intelligence)
+Make informed business decisions with our BI solutions. We provide data visualization, reporting, and analytics services that help you uncover hidden patterns, trends, and opportunities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Get in Touch
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ready to take your business to the next level? Contact us at [info@tenjinlabs.com](mailto:admin@tenjinlabs.com) to discuss your project requirements.
 
-## Deploy on Vercel
+## Follow Us
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Stay updated with the latest news, trends, and insights from the world of technology. Follow us on:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Twitter](https://img.shields.io/twitter/follow/tenjinlabs?style=social)](https://twitter.com/tenjinlabs)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-tenjinlabs-blue?style=social)](https://www.linkedin.com/company/tenjinlabs/)
+[![GitHub](https://img.shields.io/github/followers/tenjinlabs?style=social)](https://github.com/TenjinLabs)
