@@ -23,7 +23,7 @@ Make informed business decisions with our BI solutions. We provide data visualiz
 
 ## Get in Touch
 
-Ready to take your business to the next level? Contact us at [info@tenjinlabs.com](mailto:admin@tenjinlabs.com) to discuss your project requirements.
+Ready to take your business to the next level? Contact us at [admin@tenjinlabs.com](mailto:admin@tenjinlabs.com) to discuss your project requirements.
 
 ## Follow Us
 
