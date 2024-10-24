@@ -186,7 +186,7 @@ export default function LandingPage() {
       <main>
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
           <div className="absolute inset-0 z-0">
-            <div className={`absolute inset-0 ${isDarkMode ? 'bg-blue-900' : 'bg-blue-100'} opacity-50`} />
+            <div className={`absolute inset-0 ${isDarkMode ? 'bg-blue-900' : 'bg-green-100'} opacity-50`} />
             <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -214,13 +214,13 @@ export default function LandingPage() {
           </div>
           <div className="container mx-auto px-6 z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.6 }}
               className="text-center"
             >
               <motion.h2
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-5xl md:text-7xl font-bold mb-6 leading-tight"

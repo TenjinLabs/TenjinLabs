@@ -5,7 +5,7 @@ import { Lato } from 'next/font/google'
 const lato = Lato({ subsets: ['latin'], weight:['400', '700'] })
 
 export const metadata: Metadata = {
-  title: 'TenjinLabs Landing Page',
+  title: 'TenjinLabs | Innovate | Create | Transform',
   description: 'Your one-stop solution for all things tech',
 }
 
